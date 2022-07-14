@@ -24,6 +24,7 @@ executable example1
                     , filepath ^>=1.4.99.5
                     , file-io
                     , text
+    hs-source-dirs: examples
     default-language: Haskell2010
 
 -- get a filepath from a config file and read that
@@ -34,6 +35,7 @@ executable example2
                     , filepath ^>=1.4.99.5
                     , file-io
                     , text
+    hs-source-dirs: examples
     default-language: Haskell2010
 
 -- use the process package with OsPaths
@@ -44,6 +46,7 @@ executable example3
     build-depends:    base ^>=4.14.3.0
                     , filepath ^>=1.4.99.5
                     , process
+    hs-source-dirs: examples
     default-language: Haskell2010
 
 -- list directory contents via 'safe-directory'
@@ -53,4 +56,15 @@ executable example4
     build-depends:    base ^>=4.14.3.0
                     , filepath ^>=1.4.99.5
                     , safe-directory
+    hs-source-dirs: examples
+    default-language: Haskell2010
+
+-- use the OsPath unix API
+executable example5
+    import:           warnings
+    main-is:          Unix.hs
+    build-depends:    base ^>=4.14.3.0
+                    , filepath ^>=1.4.99.5
+                    , unix
+    hs-source-dirs: examples
     default-language: Haskell2010
