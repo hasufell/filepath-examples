@@ -20,12 +20,9 @@ common warnings
 executable example1
     import:           warnings
     main-is:          Read.hs
-    -- other-modules:
-    -- other-extensions:
     build-depends:    base ^>=4.14.3.0
                     , filepath ^>=1.4.99.5
                     , file-io
-                    , safe-directory
                     , text
     default-language: Haskell2010
 
@@ -33,12 +30,9 @@ executable example1
 executable example2
     import:           warnings
     main-is:          Conf.hs
-    -- other-modules:
-    -- other-extensions:
     build-depends:    base ^>=4.14.3.0
                     , filepath ^>=1.4.99.5
                     , file-io
-                    , safe-directory
                     , text
     default-language: Haskell2010
 
@@ -47,12 +41,16 @@ executable example2
 executable example3
     import:           warnings
     main-is:          Process.hs
-    -- other-modules:
-    -- other-extensions:
     build-depends:    base ^>=4.14.3.0
                     , filepath ^>=1.4.99.5
-                    , file-io
                     , process
+    default-language: Haskell2010
+
+-- list directory contents via 'safe-directory'
+executable example4
+    import:           warnings
+    main-is:          List.hs
+    build-depends:    base ^>=4.14.3.0
+                    , filepath ^>=1.4.99.5
                     , safe-directory
-                    , text
     default-language: Haskell2010
