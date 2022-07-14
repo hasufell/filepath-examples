@@ -18,7 +18,8 @@ source-repository-package
 source-repository-package
     type: git
     location: https://github.com/hasufell/safe-directory.git
-    tag: 3b96f58d80efb75d7a1feedf9fedf0c33d88725f
+    tag: bbb4a92e44c287ac29a58e50ce1c77fd2deff8e2
+    post-checkout-command: autoreconf -fi
 
 source-repository-package
     type: git
