@@ -21,7 +21,7 @@ executable example1
     import:           warnings
     main-is:          Read.hs
     build-depends:    base ^>=4.14.3.0
-                    , filepath ^>=1.4.99.5
+                    , filepath ^>=1.4.100.0
                     , file-io
                     , text
     hs-source-dirs: examples
@@ -32,7 +32,7 @@ executable example2
     import:           warnings
     main-is:          Conf.hs
     build-depends:    base ^>=4.14.3.0
-                    , filepath ^>=1.4.99.5
+                    , filepath ^>=1.4.100.0
                     , file-io
                     , text
     hs-source-dirs: examples
@@ -44,7 +44,7 @@ executable example3
     import:           warnings
     main-is:          Process.hs
     build-depends:    base ^>=4.14.3.0
-                    , filepath ^>=1.4.99.5
+                    , filepath ^>=1.4.100.0
                     , process
     hs-source-dirs: examples
     default-language: Haskell2010
@@ -54,7 +54,7 @@ executable example4
     import:           warnings
     main-is:          List.hs
     build-depends:    base ^>=4.14.3.0
-                    , filepath ^>=1.4.99.5
+                    , filepath ^>=1.4.100.0
                     , directory
     hs-source-dirs: examples
     default-language: Haskell2010
@@ -64,7 +64,7 @@ executable example5
     import:           warnings
     main-is:          Unix.hs
     build-depends:    base ^>=4.14.3.0
-                    , filepath ^>=1.4.99.5
+                    , filepath ^>=1.4.100.0
                     , unix
     hs-source-dirs: examples
     default-language: Haskell2010
